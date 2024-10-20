@@ -1,0 +1,1586 @@
+{
+  "pageProps": {
+    "menuData": {
+      "mobile": [
+        {
+          "componentId": "AccordionMenu",
+          "module": "@dsk-lib/menu",
+          "props": {
+            "title": "Cours et synthèses",
+            "linkList": [
+              {
+                "href": "/cours/auto",
+                "children": "Cours et synthèses auto (B)",
+                "isNextLink": true
+              },
+              {
+                "href": "/cours/moto",
+                "children": "Cours et synthèses moto (A1, A2, A)",
+                "isNextLink": true
+              },
+              {
+                "href": "/cours/cyclo",
+                "children": "Cours et synthèses cyclo (AM)",
+                "isNextLink": true
+              },
+              {
+                "href": "/vocabulaire-utile",
+                "children": "Vocabulaire utile",
+                "isNextLink": true
+              }
+            ]
+          }
+        },
+        {
+          "componentId": "AccordionMenu",
+          "module": "@dsk-lib/menu",
+          "props": {
+            "title": "Exercices et jeux",
+            "linkList": [
+              {
+                "href": "/exercices-jeux/auto",
+                "children": "Séries thématiques auto (B)",
+                "isNextLink": true
+              },
+              {
+                "href": "/exercices-jeux/moto",
+                "children": "Séries thématiques moto (A1, A2, A)",
+                "isNextLink": true
+              },
+              {
+                "href": "/exercices-jeux/cyclo",
+                "children": "Séries thématiques cyclo (AM)",
+                "isNextLink": true
+              },
+              {
+                "href": "/exercices-jeux/auto/series-entrainement",
+                "children": "Séries d'entraînement auto (B)",
+                "isNextLink": true
+              },
+              {
+                "href": "/exercices-jeux/moto/series-entrainement",
+                "children": "Séries d'entraînement moto (A1, A2, A)",
+                "isNextLink": true
+              },
+              {
+                "href": "/exercices-jeux/cyclo/series-entrainement",
+                "children": "Séries d'entraînement cyclo (AM)",
+                "isNextLink": true
+              },
+              {
+                "href": "/exercices-jeux/flashcards-signaux",
+                "children": "Flashcards signaux",
+                "isNextLink": true
+              },
+              {
+                "href": "/exercices-jeux/jeu-des-priorites",
+                "children": "Jeu des priorités",
+                "isNextLink": true
+              }
+            ]
+          }
+        },
+        {
+          "componentId": "Paper",
+          "module": "@material-ui/core",
+          "props": {
+            "square": true,
+            "children": [
+              {
+                "componentId": "MenuList",
+                "module": "@material-ui/core",
+                "props": {
+                  "className": "menu-list",
+                  "children": [
+                    {
+                      "componentId": "MenuItemLink",
+                      "module": "@dsk-lib/menu",
+                      "props": {
+                        "href": "/simulations-examen",
+                        "isNextLink": true,
+                        "color": "textPrimary",
+                        "underline": "none",
+                        "children": "Simulations d'examen"
+                      }
+                    },
+                    {
+                      "componentId": "MenuItemLink",
+                      "module": "@dsk-lib/menu",
+                      "props": {
+                        "href": "/tpr-examen-pratique",
+                        "isNextLink": true,
+                        "color": "textPrimary",
+                        "underline": "none",
+                        "children": "Test de perception des risques et examen pratique"
+                      }
+                    },
+                    {
+                      "componentId": "MenuItemLink",
+                      "module": "@dsk-lib/menu",
+                      "props": {
+                        "href": "https://www.feuvert.be/articles/",
+                        "color": "textPrimary",
+                        "underline": "none",
+                        "isNextLink": false,
+                        "children": "Infos et actus"
+                      }
+                    },
+                    {
+                      "componentId": "MenuItemLink",
+                      "module": "@dsk-lib/menu",
+                      "props": {
+                        "href": "/activation",
+                        "color": "textPrimary",
+                        "underline": "none",
+                        "isNextLink": true,
+                        "children": "J'ai un code"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "desktop": [
+        {
+          "componentId": "Dropdown",
+          "module": "@dsk-lib/menu",
+          "props": {
+            "index": 0,
+            "name": "Cours et synthèses",
+            "children": [
+              {
+                "componentId": "Grid",
+                "module": "@material-ui/core",
+                "props": {
+                  "container": true,
+                  "children": [
+                    {
+                      "componentId": "Grid",
+                      "module": "@material-ui/core",
+                      "props": {
+                        "item": true,
+                        "container": true,
+                        "spacing": 3,
+                        "justifyContent": "center",
+                        "style": {
+                          "maxWidth": "100%"
+                        },
+                        "children": [
+                          {
+                            "componentId": "Grid",
+                            "module": "@material-ui/core",
+                            "props": {
+                              "item": true,
+                              "style": {
+                                "maxWidth": 244
+                              },
+                              "children": [
+                                {
+                                  "componentId": "Box",
+                                  "module": "@material-ui/core",
+                                  "props": {
+                                    "children": [
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/cours/auto",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Cours et synthèses auto (B)"
+                                        }
+                                      },
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/cours/moto",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Cours et synthèses moto (A1, A2, A)"
+                                        }
+                                      },
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/cours/cyclo",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Cours et synthèses cyclo (AM)"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "componentId": "Grid",
+                            "module": "@material-ui/core",
+                            "props": {
+                              "item": true,
+                              "style": {
+                                "maxWidth": 244
+                              },
+                              "children": [
+                                {
+                                  "componentId": "Box",
+                                  "module": "@material-ui/core",
+                                  "props": {
+                                    "children": [
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/vocabulaire-utile",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Vocabulaire utile"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "componentId": "Grid",
+                            "module": "@material-ui/core",
+                            "props": {
+                              "item": true,
+                              "sm": 6,
+                              "children": []
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "componentId": "Dropdown",
+          "module": "@dsk-lib/menu",
+          "props": {
+            "index": 1,
+            "name": "Exercices et jeux",
+            "children": [
+              {
+                "componentId": "Grid",
+                "module": "@material-ui/core",
+                "props": {
+                  "container": true,
+                  "children": [
+                    {
+                      "componentId": "Grid",
+                      "module": "@material-ui/core",
+                      "props": {
+                        "item": true,
+                        "container": true,
+                        "spacing": 3,
+                        "justifyContent": "center",
+                        "style": {
+                          "maxWidth": "100%"
+                        },
+                        "children": [
+                          {
+                            "componentId": "Grid",
+                            "module": "@material-ui/core",
+                            "props": {
+                              "item": true,
+                              "style": {
+                                "maxWidth": 244
+                              },
+                              "children": [
+                                {
+                                  "componentId": "Box",
+                                  "module": "@material-ui/core",
+                                  "props": {
+                                    "children": [
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/exercices-jeux/auto",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Séries thématiques auto (B)"
+                                        }
+                                      },
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/exercices-jeux/moto",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Séries thématiques moto (A1, A2, A)"
+                                        }
+                                      },
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/exercices-jeux/cyclo",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Séries thématiques cyclo (AM)"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "componentId": "Grid",
+                            "module": "@material-ui/core",
+                            "props": {
+                              "item": true,
+                              "style": {
+                                "maxWidth": 244
+                              },
+                              "children": [
+                                {
+                                  "componentId": "Box",
+                                  "module": "@material-ui/core",
+                                  "props": {
+                                    "children": [
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/exercices-jeux/auto/series-entrainement",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Séries d'entraînement auto (B)"
+                                        }
+                                      },
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/exercices-jeux/moto/series-entrainement",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Séries d'entraînement moto (A1, A2, A)"
+                                        }
+                                      },
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/exercices-jeux/cyclo/series-entrainement",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Séries d'entraînement cyclo (AM)"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "componentId": "Grid",
+                            "module": "@material-ui/core",
+                            "props": {
+                              "item": true,
+                              "style": {
+                                "maxWidth": 244
+                              },
+                              "children": [
+                                {
+                                  "componentId": "Box",
+                                  "module": "@material-ui/core",
+                                  "props": {
+                                    "children": [
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/exercices-jeux/flashcards-signaux",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Flashcards signaux"
+                                        }
+                                      },
+                                      {
+                                        "componentId": "ColumnLink",
+                                        "module": "@dsk-lib/menu",
+                                        "props": {
+                                          "href": "/exercices-jeux/jeu-des-priorites",
+                                          "isNextLink": true,
+                                          "className": "column-link-no-border-top",
+                                          "LinkProps": {
+                                            "variant": "body1",
+                                            "underline": "none",
+                                            "color": "textPrimary"
+                                          },
+                                          "children": "Jeu des priorités"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "componentId": "Grid",
+                            "module": "@material-ui/core",
+                            "props": {
+                              "item": true,
+                              "sm": 6,
+                              "children": []
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "componentId": "DropdownButton",
+          "module": "@dsk-lib/menu",
+          "props": {
+            "isNextLink": true,
+            "ButtonProps": {
+              "href": "/simulations-examen",
+              "underline": "none"
+            },
+            "children": "Simulations d'examen",
+            "isLink": true
+          }
+        },
+        {
+          "componentId": "DropdownButton",
+          "module": "@dsk-lib/menu",
+          "props": {
+            "isNextLink": true,
+            "ButtonProps": {
+              "href": "/tpr-examen-pratique",
+              "underline": "none"
+            },
+            "children": "Test de perception des risques et examen pratique",
+            "isLink": true
+          }
+        },
+        {
+          "componentId": "DropdownButton",
+          "module": "@dsk-lib/menu",
+          "props": {
+            "isNextLink": false,
+            "ButtonProps": {
+              "href": "https://www.feuvert.be/articles/",
+              "underline": "none"
+            },
+            "children": "Infos et actus",
+            "isLink": true
+          }
+        },
+        {
+          "componentId": "DropdownButton",
+          "module": "@dsk-lib/menu",
+          "props": {
+            "isNextLink": true,
+            "ButtonProps": {
+              "href": "/activation",
+              "underline": "none"
+            },
+            "children": "J'ai un code",
+            "isLink": true
+          }
+        }
+      ],
+      "serviceLogo": {
+        "serviceImgSrc": {
+          "src": "/_next/static/media/feutvert.586fae76.svg",
+          "height": 66,
+          "width": 135
+        },
+        "serviceImgAlt": "Accueil"
+      },
+      "clientId": "feuvert",
+      "desktopStyle": {
+        "toolbarContent": {
+          "maxWidth": 988,
+          "margin": "auto"
+        },
+        "toolbar": {
+          "& ul": {
+            "justifyContent": "center"
+          },
+          "& ul > li:not(:last-child) > a:after": {
+            "content": "\"\"",
+            "width": 1,
+            "height": 26,
+            "background": "white",
+            "position": "absolute",
+            "right": 0,
+            "top": "50%",
+            "transform": "translateY(-50%)"
+          }
+        }
+      }
+    },
+    "quiz": {
+      "__typename": "Quiz",
+      "startScore": 11,
+      "learningId": 14734,
+      "title": "Rappel : deux-roues et permis de conduire 1",
+      "slugV2": "rappel-deux-roues-et-permis-de-conduire-1",
+      "description": "",
+      "maximalScore": 11,
+      "successScore": 9,
+      "questionCount": 11,
+      "accessType": "PREMIUM",
+      "status": "PUBLISHED",
+      "_id": "60b0bef9b80948a2bf97b692",
+      "okulusAssets": [],
+      "exerciseListData": [
+        {
+          "__typename": "Exercise",
+          "_id": "60b0bef9b80948a2bf97b5d6",
+          "learningId": 151679,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 142189,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "5450862c-489b-4bda-8184-bb1884632d51",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "5450862c-489b-4bda-8184-bb1884632d51",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/5450862c-489b-4bda-8184-bb1884632d51",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                },
+                {
+                  "__typename": "File",
+                  "_id": "2cd2f03d-d843-4854-8d0c-37af0dda8e4a",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "2cd2f03d-d843-4854-8d0c-37af0dda8e4a",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/2cd2f03d-d843-4854-8d0c-37af0dda8e4a",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 1227,
+                    "height": 816,
+                    "format": "JPEG"
+                  }
+                }
+              ],
+              "_id": "65e83566df882c852038be15",
+              "text": "Le permis moto est progressif en fonction de l'âge. En combien de tranches d’âge est-il divisé ?",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Le permis moto est divisé en 3 catégories d’âge pour l’accès progressif : </p><ul><li><p>18 ans pour le permis A1, </p></li><li><p>20 ans pour le permis A2, </p></li><li><p>22 ans pour le permis A.</p></li></ul><p>En accès direct, par contre, l’âge minimal est fixé à 24 ans pour la catégorie A.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be21",
+                  "gapIndex": null,
+                  "learningId": 488499,
+                  "audioText": null,
+                  "text": "en 2 tranches",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be22",
+                  "gapIndex": null,
+                  "learningId": 489486,
+                  "audioText": null,
+                  "text": "en 3 tranches",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be23",
+                  "gapIndex": null,
+                  "learningId": 490717,
+                  "audioText": null,
+                  "text": "en 4 tranches",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60b0bef9b80948a2bf97b5eb",
+          "learningId": 151680,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 142190,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "09549abf-c2a2-43fc-be89-7258de9e24a5",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "09549abf-c2a2-43fc-be89-7258de9e24a5",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/09549abf-c2a2-43fc-be89-7258de9e24a5",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 1227,
+                    "height": 816,
+                    "format": "JPEG"
+                  }
+                },
+                {
+                  "__typename": "File",
+                  "_id": "274788eb-63d6-4a76-b3b4-0dcd724d17cc",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "274788eb-63d6-4a76-b3b4-0dcd724d17cc",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/274788eb-63d6-4a76-b3b4-0dcd724d17cc",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                }
+              ],
+              "_id": "65e83566df882c852038be16",
+              "text": "Le permis moto est progressif en fonction de l'âge. Quelles sont les étapes d'âge prévues ?",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Le permis moto est divisé en 3 catégories d’âge pour l’accès progressif : 18 ans pour le permis A1, 20 ans pour le permis A2 et 22 ans pour le permis A. En accès direct, l’âge minimal est fixé à 24 ans.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be26",
+                  "gapIndex": null,
+                  "learningId": 488496,
+                  "audioText": null,
+                  "text": "18, 19, 20 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be27",
+                  "gapIndex": null,
+                  "learningId": 489497,
+                  "audioText": null,
+                  "text": "18, 20, 22 ans",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be28",
+                  "gapIndex": null,
+                  "learningId": 490718,
+                  "audioText": null,
+                  "text": "18, 21, 24 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60b0bef9b80948a2bf97b600",
+          "learningId": 151681,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 142191,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "a0ed0104-ea3a-4bef-bd6a-df8f388d5362",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "a0ed0104-ea3a-4bef-bd6a-df8f388d5362",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/a0ed0104-ea3a-4bef-bd6a-df8f388d5362",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 1227,
+                    "height": 816,
+                    "format": "JPEG"
+                  }
+                },
+                {
+                  "__typename": "File",
+                  "_id": "6a9f6415-c14e-42dc-850e-94daa995c12b",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "6a9f6415-c14e-42dc-850e-94daa995c12b",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/6a9f6415-c14e-42dc-850e-94daa995c12b",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                }
+              ],
+              "_id": "65e83566df882c852038be17",
+              "text": "Je souhaite acheter une moto de 1 000 cc développant 110 kW. De quel permis ai-je besoin ?",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Le permis A est requis pour pouvoir conduire une motocyclette dont la puissance dépasse 35 kW.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be2b",
+                  "gapIndex": null,
+                  "learningId": 488501,
+                  "audioText": null,
+                  "text": "un permis A",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be2c",
+                  "gapIndex": null,
+                  "learningId": 489490,
+                  "audioText": null,
+                  "text": "un permis A1",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be2d",
+                  "gapIndex": null,
+                  "learningId": 490719,
+                  "audioText": null,
+                  "text": "un permis A2",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60b0bef9b80948a2bf97b615",
+          "learningId": 151682,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 142193,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "b1d6f4eb-ddab-4738-a1d4-b8b3ea262dce",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "b1d6f4eb-ddab-4738-a1d4-b8b3ea262dce",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/b1d6f4eb-ddab-4738-a1d4-b8b3ea262dce",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 1227,
+                    "height": 816,
+                    "format": "JPEG"
+                  }
+                },
+                {
+                  "__typename": "File",
+                  "_id": "ceeb9525-03df-4a64-b832-426cf209c59a",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "ceeb9525-03df-4a64-b832-426cf209c59a",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/ceeb9525-03df-4a64-b832-426cf209c59a",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                }
+              ],
+              "_id": "65e83566df882c852038be18",
+              "text": "J’envisage l’achat d’une moto de 1 200 cc et développant 90 kW. En accès progressif, quel est l’âge minimal pour conduire cette moto ?",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Le permis A est requis pour pouvoir conduire une motocyclette dont la puissance dépasse 35 kW. Ce permis est accessible à partir de 22 ans en accès progressif. L’âge minimal sera, par contre, de 24 ans en accès direct.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be30",
+                  "gapIndex": null,
+                  "learningId": 488500,
+                  "audioText": null,
+                  "text": "20 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be31",
+                  "gapIndex": null,
+                  "learningId": 489491,
+                  "audioText": null,
+                  "text": "22 ans",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be32",
+                  "gapIndex": null,
+                  "learningId": 490720,
+                  "audioText": null,
+                  "text": "24 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60b0bef9b80948a2bf97b62a",
+          "learningId": 151683,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 142192,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "f0da8df7-6c7e-4762-b24c-37a080e91355",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "f0da8df7-6c7e-4762-b24c-37a080e91355",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/f0da8df7-6c7e-4762-b24c-37a080e91355",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                },
+                {
+                  "__typename": "File",
+                  "_id": "09549abf-c2a2-43fc-be89-7258de9e24a5",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "09549abf-c2a2-43fc-be89-7258de9e24a5",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/09549abf-c2a2-43fc-be89-7258de9e24a5",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 1227,
+                    "height": 816,
+                    "format": "JPEG"
+                  }
+                }
+              ],
+              "_id": "65e83566df882c852038be19",
+              "text": "J’envisage l’achat d’une moto de 1 200 cc et développant 90 kW. En accès direct (non-progressif), quel est l’âge minimal pour conduire cette moto ?",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Le permis A est requis pour pouvoir conduire une motocyclette dont la puissance dépasse 35 kW. Ce permis est accessible à partir de 22 ans en accès progressif. L’âge minimal sera, par contre, de 24 ans en accès direct.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be35",
+                  "gapIndex": null,
+                  "learningId": 488497,
+                  "audioText": null,
+                  "text": "20 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be36",
+                  "gapIndex": null,
+                  "learningId": 489500,
+                  "audioText": null,
+                  "text": "22 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be37",
+                  "gapIndex": null,
+                  "learningId": 490721,
+                  "audioText": null,
+                  "text": "24 ans",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60b0bef9b80948a2bf97b63f",
+          "learningId": 151684,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 142194,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "fb825849-955c-4196-9924-5af058b42238",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "fb825849-955c-4196-9924-5af058b42238",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/fb825849-955c-4196-9924-5af058b42238",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 1227,
+                    "height": 816,
+                    "format": "JPEG"
+                  }
+                },
+                {
+                  "__typename": "File",
+                  "_id": "7a8ea90d-e7fb-49f1-a593-2d248bcdd98c",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "7a8ea90d-e7fb-49f1-a593-2d248bcdd98c",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/7a8ea90d-e7fb-49f1-a593-2d248bcdd98c",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                }
+              ],
+              "_id": "65e83566df882c852038be1a",
+              "text": "J’ai 23 ans et viens d’obtenir le permis A. Puis-je prendre un passager sur ma moto ?",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Contrairement au permis AM, il n’existe pas d’âge minimal pour prendre un passager sur sa moto.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be3a",
+                  "gapIndex": null,
+                  "learningId": 488505,
+                  "audioText": null,
+                  "text": "oui",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be3b",
+                  "gapIndex": null,
+                  "learningId": 489492,
+                  "audioText": null,
+                  "text": "non, c'est interdit puisque je n'ai pas 24 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be3c",
+                  "gapIndex": null,
+                  "learningId": 490722,
+                  "audioText": null,
+                  "text": "non, c'est interdit puisque je possède mon permis depuis moins de 2 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60b0bef9b80948a2bf97b654",
+          "learningId": 151685,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 142197,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "07562482-35e0-4a1a-8b6a-c72f77414a30",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "07562482-35e0-4a1a-8b6a-c72f77414a30",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/07562482-35e0-4a1a-8b6a-c72f77414a30",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 1227,
+                    "height": 816,
+                    "format": "JPEG"
+                  }
+                },
+                {
+                  "__typename": "File",
+                  "_id": "73ab8790-24c5-45cb-8c90-b44e80fc0a0f",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "73ab8790-24c5-45cb-8c90-b44e80fc0a0f",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/73ab8790-24c5-45cb-8c90-b44e80fc0a0f",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                }
+              ],
+              "_id": "65e83566df882c852038be1b",
+              "text": "Je souhaiterais acheter un petit scooter de 125 cc et d’une puissance de 9 kW pour pouvoir me déplacer facilement en ville. Quel est l’âge minimal pour pouvoir conduire cet engin ?",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p> L’âge minimum pour pouvoir conduire un engin de cette catégorie (A1) est fixé à 18 ans.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be3f",
+                  "gapIndex": null,
+                  "learningId": 488502,
+                  "audioText": null,
+                  "text": "14 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be40",
+                  "gapIndex": null,
+                  "learningId": 489493,
+                  "audioText": null,
+                  "text": "16 ans",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be41",
+                  "gapIndex": null,
+                  "learningId": 490723,
+                  "audioText": null,
+                  "text": "18 ans",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60b0bef9b80948a2bf97b669",
+          "learningId": 151686,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 142195,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "1e786a88-7d55-4d25-b08a-29b51f524749",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "1e786a88-7d55-4d25-b08a-29b51f524749",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/1e786a88-7d55-4d25-b08a-29b51f524749",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                },
+                {
+                  "__typename": "File",
+                  "_id": "07562482-35e0-4a1a-8b6a-c72f77414a30",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "07562482-35e0-4a1a-8b6a-c72f77414a30",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/07562482-35e0-4a1a-8b6a-c72f77414a30",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 1227,
+                    "height": 816,
+                    "format": "JPEG"
+                  }
+                }
+              ],
+              "_id": "65e83566df882c852038be1c",
+              "text": "Je possède un permis B qui m’a été délivré en 2005. Dois-je suivre une formation particulière pour conduire un scooter de catégorie A1 ?",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Les titulaires d’un permis de conduire catégorie B délivré avant le 1er mai 2011 peuvent conduire une motocyclette de catégorie A1 sans devoir suivre une formation préalable. Pour les permis de conduire catégorie B délivrés après cette date, 4 heures de formation sont obligatoires afin de pouvoir conduire une motocyclette de catégorie A1.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be44",
+                  "gapIndex": null,
+                  "learningId": 488506,
+                  "audioText": null,
+                  "text": "oui, une formation de 2 heures en école de conduite",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be45",
+                  "gapIndex": null,
+                  "learningId": 489501,
+                  "audioText": null,
+                  "text": "oui, une formation de 4 heures en école de conduite",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be46",
+                  "gapIndex": null,
+                  "learningId": 490724,
+                  "audioText": null,
+                  "text": "non",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60b0bef9b80948a2bf97b67e",
+          "learningId": 151687,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 142196,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "5ed4f07f-b001-484a-af93-d8e663ab9bb2",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "5ed4f07f-b001-484a-af93-d8e663ab9bb2",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/5ed4f07f-b001-484a-af93-d8e663ab9bb2",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 1227,
+                    "height": 816,
+                    "format": "JPEG"
+                  }
+                },
+                {
+                  "__typename": "File",
+                  "_id": "b1a8404b-737c-46f6-9180-eaf604069a87",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "b1a8404b-737c-46f6-9180-eaf604069a87",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/b1a8404b-737c-46f6-9180-eaf604069a87",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                }
+              ],
+              "_id": "65e83566df882c852038be1d",
+              "text": "Titulaire d’un permis B depuis plus de 2 ans, j’ai suivi une formation de 4 heures en école de conduite afin de pouvoir conduire une moto de catégorie A1. Puis-je directement conduire cette moto après avoir suivi ces cours ?",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Muni du certificat d’enseignement délivré par votre école de conduite, vous devez d’abord vous rendre auprès de votre administration communale, service « Permis de conduire », qui mentionnera le code « 372 » sur votre permis, en face de la catégorie B.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be49",
+                  "gapIndex": null,
+                  "learningId": 488503,
+                  "audioText": null,
+                  "text": "oui, mais je dois toujours garder le certificat d'enseignement sur moi",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be4a",
+                  "gapIndex": null,
+                  "learningId": 489494,
+                  "audioText": null,
+                  "text": "non, je dois attendre 1 mois après la fin du dernier cours",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be4b",
+                  "gapIndex": null,
+                  "learningId": 490725,
+                  "audioText": null,
+                  "text": "non, je dois d'abord passer par mon administration communale",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60e71c1c483c6f0028472fe7",
+          "learningId": 152288,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 143394,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "216c41e7-bd8f-4a91-b980-503380d23812",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "216c41e7-bd8f-4a91-b980-503380d23812",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/216c41e7-bd8f-4a91-b980-503380d23812",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 524,
+                    "height": 348,
+                    "format": "JPEG"
+                  }
+                },
+                {
+                  "__typename": "File",
+                  "_id": "dd8c6ed7-3224-40d7-a2ce-add38e006f48",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "dd8c6ed7-3224-40d7-a2ce-add38e006f48",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/dd8c6ed7-3224-40d7-a2ce-add38e006f48",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                }
+              ],
+              "_id": "65e83566df882c852038be1e",
+              "text": "Pour circuler avec ce vélo équipé d'un moteur d'appoint, je dois avoir un permis de conduire catégorie A3 :",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Un vélo équipé d'un moteur d'appoint reste classifié comme cycle.</p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be4e",
+                  "gapIndex": null,
+                  "learningId": 492191,
+                  "audioText": null,
+                  "text": "oui",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be4f",
+                  "gapIndex": null,
+                  "learningId": 492192,
+                  "audioText": null,
+                  "text": "non",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__typename": "Exercise",
+          "_id": "60e71c1c483c6f0028472fe3",
+          "learningId": 152289,
+          "text": "",
+          "difficulty": 1,
+          "displayType": "",
+          "audioText": "",
+          "maxDurationSeconds": 0,
+          "okulusAssets": [],
+          "questionsData": [
+            {
+              "__typename": "Question",
+              "learningId": 143395,
+              "score": {
+                "__typename": "Score",
+                "success": 0,
+                "failure": 1
+              },
+              "type": "QCM_SINGLE",
+              "okulusAssets": [
+                {
+                  "__typename": "File",
+                  "_id": "216c41e7-bd8f-4a91-b980-503380d23812",
+                  "version": "v0",
+                  "mime": "image/jpeg",
+                  "filename": "216c41e7-bd8f-4a91-b980-503380d23812",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/216c41e7-bd8f-4a91-b980-503380d23812",
+                  "realm": "digiSchool",
+                  "imageTags": {
+                    "__typename": "ImageTags",
+                    "width": 524,
+                    "height": 348,
+                    "format": "JPEG"
+                  }
+                },
+                {
+                  "__typename": "File",
+                  "_id": "c045322d-48c9-42f5-bdc0-ea7bffa4ddc1",
+                  "version": "v0",
+                  "mime": "audio/mpeg",
+                  "filename": "c045322d-48c9-42f5-bdc0-ea7bffa4ddc1",
+                  "s3swhUrl": "https://diy7ta1tt6jst.cloudfront.net/prod/okulus/c045322d-48c9-42f5-bdc0-ea7bffa4ddc1",
+                  "realm": "digiSchool",
+                  "imageTags": null
+                }
+              ],
+              "_id": "65e83566df882c852038be1f",
+              "text": "Pour circuler avec ce vélo équipé d'un moteur d'appoint, je dois porter un casque de protection :",
+              "audioText": null,
+              "explanation": {
+                "__typename": "Explanation",
+                "text": "<p>Un vélo équipé d'un moteur d'appoint reste classifié comme cycle. <br /><br /></p>",
+                "audioText": null
+              },
+              "possibleAnswers": [
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be52",
+                  "gapIndex": null,
+                  "learningId": 492193,
+                  "audioText": null,
+                  "text": "oui",
+                  "isCorrect": false,
+                  "okulusAssets": []
+                },
+                {
+                  "__typename": "Answer",
+                  "_id": "65e83566df882c852038be53",
+                  "gapIndex": null,
+                  "learningId": 492194,
+                  "audioText": null,
+                  "text": "non",
+                  "isCorrect": true,
+                  "okulusAssets": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "__N_SSG": true
+}
