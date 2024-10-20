@@ -60,7 +60,7 @@ async function getRandomQuestion() {
 
 async function generateQuestion() {
     const container = document.getElementById("questionContainer");
-    container.innerHTML = "<div id=\"imageContainer\" class='d-flex flex-column align-items-center mb-3' style='max-height: 500px'>" +
+    container.innerHTML = "<div id=\"imageContainer\" class='d-flex flex-column align-items-center mb-5' style='height: 400px'>" +
         "<h5 id=\"chapter\"></h5>" +
         "    <img id=\"image\" src=\"\" alt=\"questionImage\" class='h-100'>" +
         "</div>" +
