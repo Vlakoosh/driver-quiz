@@ -60,9 +60,9 @@ async function getRandomQuestion() {
 
 async function generateQuestion() {
     const container = document.getElementById("questionContainer");
-    container.innerHTML = "<div id=\"imageContainer\" class='d-flex flex-column align-items-center mb-3'>" +
+    container.innerHTML = "<div id=\"imageContainer\" class='d-flex flex-column align-items-center mb-3' style='max-height: 500px'>" +
         "<h5 id=\"chapter\"></h5>" +
-        "    <img id=\"image\" src=\"\" alt=\"questionImage\" class='col-sm-12'>" +
+        "    <img id=\"image\" src=\"\" alt=\"questionImage\" class='h-100'>" +
         "</div>" +
         "<div id=\"answersContainer\">" +
         "    <h3 id=\"questionText\"></h3>\n" +
@@ -109,17 +109,19 @@ async function generateQuestion() {
                 button.classList.add("btn");
                 button.classList.add("btn-light");
                 button.classList.add("border-secondary")
-                button.classList.add("col-sm-12");
-                button.classList.add("col-lg-12");
+                button.classList.add("col-12");
                 button.classList.add("p-4")
+                button.classList.add("my-2")
                 button.classList.add((answer.isCorrect) ? "correct" : "wrong")
 
                 button.onclick = () => {
                     if (button.classList.contains("wrong")) {
                         explanation.hidden = false;
-                        button.classList.add("red");
+                        button.classList.remove("btn-light");
+                        button.classList.add("btn-danger");
                     } else {
-                        button.classList.add("green");
+                        button.classList.remove("btn-light");
+                        button.classList.add("btn-success");
                     }
                 }
 
