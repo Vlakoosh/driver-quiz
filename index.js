@@ -60,9 +60,9 @@ async function getRandomQuestion() {
 
 async function generateQuestion() {
     const container = document.getElementById("questionContainer");
-    container.innerHTML = "<div id=\"imageContainer\" class='d-flex flex-column align-items-center mb-5' style='height: 400px'>" +
+    container.innerHTML = "<div id=\"imageContainer\" class='d-flex flex-column align-items-center col-12'>" +
         "<h5 id=\"chapter\"></h5>" +
-        "    <img id=\"image\" src=\"\" alt=\"questionImage\" class='h-100'>" +
+        "<img id=\"image\" src=\"\" alt=\"questionImage\" class='w-100'>" +
         "</div>" +
         "<div id=\"answersContainer\">" +
         "    <h3 id=\"questionText\"></h3>\n" +
@@ -119,6 +119,7 @@ async function generateQuestion() {
                         explanation.hidden = false;
                         button.classList.remove("btn-light");
                         button.classList.add("btn-danger");
+                        button.style.animation = "horizontal-shaking 0.5s linear forwards";
                     } else {
                         button.classList.remove("btn-light");
                         button.classList.add("btn-success");
